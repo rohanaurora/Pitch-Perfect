@@ -12,21 +12,12 @@ import AVFoundation
 
 class PlaybackVC: UIViewController {
 
-    var recordedAudioURL:URL!
+    var recordedAudioURL: URL!
     var audioFile: AVAudioFile!
     var audioEngine: AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
 
-    enum ButtonType: Int {
-        case slow = 0,
-             fast,
-             chipmunk,
-             vader,
-             echo,
-             reverb
-    }
-    
     @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
     @IBOutlet weak var highPitchButton: UIButton!
